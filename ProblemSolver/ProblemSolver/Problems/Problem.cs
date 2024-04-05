@@ -29,5 +29,19 @@ namespace ProblemSolver.Problems
                 nums[nums.Length - 1 - j] = 0;
             }
         }
+
+        public static void MoveZeroes(int[] nums, bool isLatest = false)
+        {
+            for (int i = 0, j = 0; i < nums.Length; i++)
+            {
+                if (nums[i] != 0)
+                {
+                    var temp = nums[j];
+                    nums[j] = nums[i];
+                    nums[i] = temp;
+                    j++;
+                }
+            }
+        }
     }
 }

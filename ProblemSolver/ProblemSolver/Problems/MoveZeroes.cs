@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ProblemSolver.Problems
 {
-    internal partial class Problem
+    internal partial class Solution
     {
         //https://leetcode.com/problems/move-zeroes/description/
         public static void MoveZeroes(int[] nums)
